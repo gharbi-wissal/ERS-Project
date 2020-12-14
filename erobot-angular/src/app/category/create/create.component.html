@@ -1,0 +1,39 @@
+<div class="card card-info col-12">
+  <div class="card-header">
+    <h3 class="card-title">Create New Category</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form class="form-horizontal" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="card-body">
+      <div class="form-group">
+        <mat-form-field class="full-width" appearance="standard">
+          <mat-label>Name</mat-label>
+          <input
+            matInput
+            type="text"
+            maxlength="200"
+            matInput
+            placeholder="Category Name"
+            [required]="true"
+            formControlName="name"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      <button type="submit" class="btn btn-info" [disabled]="!form.valid">
+        Submit
+      </button>
+      <a
+        href="#"
+        routerLink="/category/index"
+        class="btn btn-default float-right"
+        >Back</a
+      >
+    </div>
+    <!-- /.card-footer -->
+  </form>
+</div>
+<!-- /.card -->

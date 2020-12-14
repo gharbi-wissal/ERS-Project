@@ -1,0 +1,54 @@
+
+<div class="card card-info col-12">
+  <div class="card-header">
+    <h3 class="card-title">Edit Customer</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form class="form-horizontal" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="card-body">
+      <div class="form-group">
+      <mat-form-field class="full-width" appearance="standard">
+        <mat-label>First Name</mat-label>
+        <input
+          matInput
+          type="text"
+          maxlength="200"
+          matInput
+          placeholder="First Name"
+          [required]="true"
+          formControlName="firstName"
+        />
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field class="full-width" appearance="standard">
+        <mat-label> LastName</mat-label>
+        <input
+          matInput
+          type="text"
+          maxlength="200"
+          matInput
+          placeholder=""
+          [required]="true"
+          formControlName="lastName"
+        />
+      </mat-form-field>
+    </div>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      <button type="submit" class="btn btn-info" [disabled]="!form.valid">
+        Submit
+      </button>
+      <a
+        href="#"
+        routerLink="/customer/index"
+        class="btn btn-default float-right"
+        >Back</a
+      >
+    </div>
+    <!-- /.card-footer -->
+  </form>
+</div>
+<!-- /.card -->

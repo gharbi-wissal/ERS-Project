@@ -1,0 +1,44 @@
+.w-25 {
+    width: 25px;
+}
+
+.w-100 {
+    width: 100px;
+}
+
+.th-center {
+    text-align: center;
+}
+
+.th-left {
+    text-align: left;
+}
+
+.th-right {
+    text-align: right;
+}
+
+.right {
+    text-align: right;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.mat-table {
+    overflow: auto;
+    max-height: 500px;
+}

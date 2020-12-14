@@ -1,0 +1,56 @@
+DS_STORE
+
+erobot-angular//dist/
+erobot-angular//bazel-out
+erobot-angular//integration/bazel/bazel-*
+*.log
+erobot-angular/node_modules
+
+# Include when developing application packages.
+erobot-angular/pubspec.lock
+erobot-angular/.c9
+erobot-angular/.idea/
+erobot-angular/.devcontainer/*
+erobot-angular/!.devcontainer/README.md
+erobot-angular/!.devcontainer/recommended-devcontainer.json
+erobot-angular/!.devcontainer/recommended-Dockerfile
+erobot-angular/.settings/
+erobot-angular/.vscode/launch.json
+erobot-angular/.vscode/settings.json
+erobot-angular/.vscode/tasks.json
+erobot-angular/*.swo
+erobot-angular/modules/.settings
+erobot-angular/modules/.vscode
+erobot-angular/.vimrc
+erobot-angular/.nvimrc
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
+
+# build-analytics
+erobot-angular/.build-analytics
+
+# rollup-test output
+erobot-angular/modules/rollup-test/dist/
+
+# User specific bazel settings
+erobot-angular/.bazelrc.user
+
+# User specific ng-dev settings
+erobot-angular/.ng-dev.user*
+
+.notes.md
+erobot-angular/baseline.json
+
+# Ignore .history for the xyz.local-history VSCode extension
+erobot-angular/.history
+
+# CLDR data
+erobot-angular/tools/gulp-tasks/cldr/cldr-data/
+
+# Husky
+erobot-angular/.husky/_
